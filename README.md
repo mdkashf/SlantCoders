@@ -4,3 +4,12 @@
 
 *Lab 00 -- But What Does the Data Say?*
 
+**Hypothesis:**
+
+**Background:**
+
+**Experiment Methodology:**
+
+**Results:**
+
+**Conclusions:**
