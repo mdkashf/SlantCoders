@@ -15,6 +15,7 @@ If the val found here is less than our search val, then we look at the position 
 Repeat the above two steps until the value is found.
 If the row counter or column counter must be changed to something out of range, then the search val is not in our matrix, and we will return "(-1, -1)".
 ***/
+import java.lang.Math;
 
 public class MatrixFinder{
 
@@ -23,6 +24,7 @@ public class MatrixFinder{
     //int[][] arr has increasing columns from top to bottom
     public static String find(int[][] arr, int val){
 	//first position to be checked:
+	long start = System.currentTimeMillis();
 	int row = arr.length - 1;
 	int col = 0;
 	
@@ -42,6 +44,8 @@ public class MatrixFinder{
 
 	//return the col position and the row position as a String
 	return ("(" + (col+1) + ", " + (row+1) + ")");
+	//	long end = System.currentTimeMillis();
+	//System.out.println("time: " + (end-start));
     }
 
     //method to print out an int[][]
@@ -53,48 +57,54 @@ public class MatrixFinder{
 	}
     }
 
+    //random array size generator
+    public static int[][] gen(int x){
+
+	int[][] randArr = new int[x][x];
+
+	//the skeleton of the matrix:
+	randArr[0][0] = (int)( Math.random() * 10);
+
+        for (int i = 1; i < randArr.length; i++){
+	    randArr[0][i] = (int)(randArr[0][i-1] + (Math.random() * 10) + 1);
+        }
+	for (int j = 1; j < randArr.length; j++){
+	    randArr[j][0] = (int)(randArr[j-1][0] + (Math.random() * 10) + 1);
+	}
+
+	//the rest:
+	int one; 
+	int two;
+	for (int a = 1; a < randArr.length; a++){
+	    for (int b = 1; b < randArr.length; b++){
+		one = randArr[a-1][b] + (int) (Math.random() * 10) + 1;
+		two = randArr[a][b-1] + (int) (Math.random() * 10) +  1; 
+		if (one > two)
+		    randArr[a][b] = one;
+		else randArr[a][b] = two;
+	    }
+	}
+	return randArr;
+    }
 
     public static void main (String[] args){
-	System.out.println("matrix arr:");
-	int[][] arr = {{1, 2, 3}, {2, 3, 4}, {3, 4, 5}};
-	printOut(arr);
-	System.out.print("search 3: ");
-	System.out.println(find(arr, 3));
-	System.out.print("search -1: ");
-	System.out.println(find(arr, -1));
-	System.out.print("search 5: ");
-	System.out.println(find(arr, 5));
-	System.out.print("search 4: ");
-	System.out.println(find(arr, 4));
-	System.out.print("search 1: ");
-	System.out.println(find(arr, 1));
-	System.out.println("\n======================\n");
-
-	System.out.println("matrix arr1:");
-	int[][] arr1 = {{1, 2, 6}, {2, 3, 7}, {3, 4, 8}};
-	printOut(arr1);
-	System.out.print("search 6: ");
-	System.out.println(find(arr1, 6));
-	System.out.print("search 8: ");
-	System.out.println(find(arr1, 8));
-	System.out.print("search 0:");
-	System.out.println(find(arr1, 0));
-	System.out.println("\n======================\n");
-
-	System.out.println("matrix arr2: size zero");
-	int[][] arr2 = {};
-	System.out.print("search 3: " );
-	System.out.println(find(arr2, 3));
-	System.out.println("\n======================\n");
-
-	System.out.println("matrix arr3: ");
-	int[][] arr3 = {{1}};
-	printOut(arr3);
-	System.out.print("search 3: " );
-        System.out.println(find(arr3, 3));
-	System.out.print("search 1: " );
-        System.out.println(find(arr3, 1));
-
+	
+	int[][] rand;
+	rand = gen(10000);
+	int randNum = (int)(Math.random() * 100);
+	for (int i = 0; i < 10; i++){
+	    System.out.println("Trial #" + i);
+	    long start = System.currentTimeMillis();
+	    long nano = System.nanoTime();
+	    //System.out.println(nano);
+	    //System.out.println(start);
+	    find(rand, randNum);
+	    long end = System.currentTimeMillis();
+	    long nanoEnd = System.nanoTime();
+	    //System.out.println(nanoEnd);
+	    //System.out.println(end);
+	    System.out.println("total time:\n " +(end - start) + "ms\t" + (nanoEnd - nano) + "ns");
+	}
     }
 
 }
