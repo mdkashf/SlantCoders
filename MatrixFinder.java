@@ -16,6 +16,7 @@ Repeat the above two steps until the value is found.
 If the row counter or column counter must be changed to something out of range, then the search val is not in our matrix, and we will return "(-1, -1)".
 ***/
 import java.lang.Math;
+import java.util.Random;
 
 public class MatrixFinder{
 
@@ -89,22 +90,39 @@ public class MatrixFinder{
 
     public static void main (String[] args){
 	
-	int[][] rand;
-	rand = gen(10000);
-	int randNum = (int)(Math.random() * 100);
-	for (int i = 0; i < 10; i++){
-	    System.out.println("Trial #" + i);
+	int[][] rand;	
+	rand = gen(6000);
+	long avgms = 0;
+	long avgns = 0;
+	int randNum = (int)((Math.random() * 100)+ 1);
+	System.out.println(randNum);
+	int i;
+	int tenth = 0;
+	for (i = 0; i < 1000; i++){
+	    if (i % 10 == 0){		
+		rand = gen(6000);
+		tenth = 0;
+	    }
+	    //System.out.println("Trial #" + i);
 	    long start = System.currentTimeMillis();
-	    long nano = System.nanoTime();
-	    //System.out.println(nano);
-	    //System.out.println(start);
+	    //long nano = System.nanoTime();
+
 	    find(rand, randNum);
 	    long end = System.currentTimeMillis();
-	    long nanoEnd = System.nanoTime();
-	    //System.out.println(nanoEnd);
-	    //System.out.println(end);
-	    System.out.println("total time:\n " +(end - start) + "ms\t" + (nanoEnd - nano) + "ns");
+	    //long nanoEnd = System.nanoTime();
+	    tenth += (end - start);
+	    if (i % 10 == 9){
+		System.out.println((double)tenth / 10);
+	    }
+	    avgms += (end - start);
+	    //avgns += (nanoEnd - nano);
+
+	    System.out.println("total time:\n " +(end - start) + "ms\t"/* + (nanoEnd - nano) + "ns"*/);
 	}
+
+	System.out.println(i);
+	System.out.println("Average ms: " + ((double)avgms/i));
+	//System.out.println("Average ns: " + (avgns/i));
     }
 
 }
