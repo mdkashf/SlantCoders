@@ -33,7 +33,7 @@ We also tested on three different computers, knowing that run time can be differ
 
 **Results:**
 
-Chart0: 
+*Chart0:* 
 
 
 ![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Chart0.jpg)
@@ -41,7 +41,7 @@ Chart0:
 
 This represents the data collected by Thinker 0 on their computer. 
 
-Chart1:
+*Chart1:*
 
 
 ![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Chart1.jpg)
@@ -50,7 +50,7 @@ Chart1:
 This represents the data collected by Thinker 1 on their computer. 
 
 
-Chart2: 
+*Chart2: *
 
 
 ![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Chart2.png)
