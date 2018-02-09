@@ -21,7 +21,7 @@ If the row counter or column counter must be changed to something out of range, 
 **Hypothesis:**
 
 
-The run-time efficiency of our algorithm for a matrix of of n rows (and therefore also n columns, because it is a square) is O(n).
+The run-time efficiency of our algorithm for a matrix of n rows (and therefore also n columns, because it is a square) is O(n).
 
 **Experiment Methodology:**
 
