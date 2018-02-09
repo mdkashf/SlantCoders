@@ -50,7 +50,7 @@ This represents the data collected by Thinker 0 on their computer.
 This represents the data collected by Thinker 1 on their computer. 
 
 
-*Chart2: *
+*Chart2:*
 
 
 ![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Chart2.png)
