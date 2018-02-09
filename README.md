@@ -33,6 +33,6 @@ We also tested on three different computers, knowing that run time can be differ
 
 **Results:**
 
-![alt text](https://github.com/mdkashf/SlantCoders/blob/master/chart.png)
+![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Chart0.png)
 
 **Conclusions:**
