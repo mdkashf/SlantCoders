@@ -33,6 +33,6 @@ We also tested on three different computers, knowing that run time can be differ
 
 **Results:**
 
-![alt text](https://s7d1.scene7.com/is/image/PETCO/cat-category-090617-369w-269h-hero-cutout-d?fmt=png-alpha)
+![alt text](https://github.com/mdkashf/SlantCoders/blob/master/chart.png)
 
 **Conclusions:**
