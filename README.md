@@ -32,6 +32,6 @@ We tested the run time for different sizes by changing the size variable in the 
 We also tested on three different computers, knowing that run time can be different for different computers.
 
 **Results:**
-![Alt text](relative/path/to/img.jpg?raw=true "Title")
+https://s7d1.scene7.com/is/image/PETCO/cat-category-090617-369w-269h-hero-cutout-d?fmt=png-alpha
 
 **Conclusions:**
