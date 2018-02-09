@@ -28,7 +28,7 @@ The run-time efficiency of our algorithm for a matrix of n rows (and therefore a
 We created a method called gen(int n) in MatrixFinder, that randomly generates a matrix of dimensions n * n that follows the previously mentioned standards. 
 In our driver class, we experimented with the size of the matrix, going from 1,000 up to 10,000 by increments of 500. We randomly generated a number, and searched for this number in the randomly generated matrix a number of times, through our for-loop. The time in milliseconds was recorded right before find(matrix, number) was called, and also recorded right after the method was called. The difference was added to a sum, which was then divided by the number of trials, so as to find the average run time. 
 To make sure that we weren't testing the best- or worst-case matrix, every 100 trials, we generated a new matrix to search. 
-We tested the run time for different sizes by changing the size variable in the driver class. We also tested the run time based on the number of trials, by changing the value that i goes up to in our driver class.
+We tested the run time for different sizes by changing the size variable in the driver class. We also tested the run time based on the number of trials, by changing the number of iterations in our driver class.
 We also tested on three different computers, knowing that run time can be different for different computers.
 
 **Results:**
