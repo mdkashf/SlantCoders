@@ -65,6 +65,11 @@ This represents the data collected by Thinker 2 on their computer.
 
 Although the data was collected on three different computers, the overall trend was decreased overall average runtime for more trials, and a linear increase in overall average runtime for greater size arrays. 
 Furthermore, the data appears to be more regular for more trials; the 10 trial lines have much more variation than the 10,000 trial lines. The coefficients of determination approached 1 as the number of trials went up.
+Below, we have isolated the 10,000 trial data to show that it greatly resembles a linear relationship. 
+![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Linear0.jpg)
+![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Linear1.jpg)
+![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Linear2.jpg)
+
 
 
 **Conclusions:**
