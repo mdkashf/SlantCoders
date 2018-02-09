@@ -33,10 +33,24 @@ We also tested on three different computers, knowing that run time can be differ
 
 **Results:**
 
+Chart0: 
 ![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Chart0.jpg)
+This represents the data collected by Thinker 0 on their computer. 
 
+Chart1:
 ![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Chart1.jpg)
+This represents the data collected by Thinker 1 on their computer. 
 
+Chart2: 
 ![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Chart2.png)
+This represents the data collected by Thinker 2 on their computer. 
+
+**Analysis:**
+Although the data was collected on three different computers, the overall trend was decreased overall average runtime for more trials, and a linear increase in overall average runtime for greater size arrays. 
+Furthermore, the data appears to be more regular for more trials; the 10 trial lines have much more variation than the 10,000 trial lines. The coefficients of determination approached 1 as the number of trials went up.
+
 
 **Conclusions:**
+Our hypothesis of having O(n) runtime for arrays of n x n appears to be supported by our data. For the 10,000 trial lines, which were the most regular, lines of best fit can be drawn and are linear. Furthermore, the coefficients of determination approached one, so we can say that this data was linear.
+Something that we do not know how to explain is why the average runtime decreased for greater trial number so significantly. One possible explanation could be that it has to do with the way that Java is first compiled and then executed.
+
