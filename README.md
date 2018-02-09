@@ -34,16 +34,31 @@ We also tested on three different computers, knowing that run time can be differ
 **Results:**
 
 Chart0: 
+
+
 ![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Chart0.jpg)
+
+
 This represents the data collected by Thinker 0 on their computer. 
 
 Chart1:
+
+
 ![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Chart1.jpg)
+
+
 This represents the data collected by Thinker 1 on their computer. 
 
+
 Chart2: 
+
+
 ![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Chart2.png)
-This represents the data collected by Thinker 2 on their computer. 
+
+
+This represents the data collected by Thinker 2 on their computer.
+
+
 
 **Analysis:**
 Although the data was collected on three different computers, the overall trend was decreased overall average runtime for more trials, and a linear increase in overall average runtime for greater size arrays. 
