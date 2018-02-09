@@ -37,4 +37,6 @@ We also tested on three different computers, knowing that run time can be differ
 
 ![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Chart1.jpg)
 
+![alt text](https://github.com/mdkashf/SlantCoders/blob/master/Chart2.jpg)
+
 **Conclusions:**
